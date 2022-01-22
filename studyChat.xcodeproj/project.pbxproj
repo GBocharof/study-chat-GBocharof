@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1FBB96F46569D43B107AE047 /* Pods_studyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB5C357CF8A9DEFF9ECC153 /* Pods_studyChat.framework */; };
 		9A634CA202907A3E76D074F4 /* Pods_studyChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE1EEC2DF1676B10FB8033E /* Pods_studyChatTests.framework */; };
-		D3064A79279C1C7800503EA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3064A78279C1C7800503EA7 /* GoogleService-Info.plist */; };
 		D31E7EB9279C4A7B00166384 /* DBChannel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB3279C4A7B00166384 /* DBChannel+CoreDataClass.swift */; };
 		D31E7EBA279C4A7B00166384 /* studyChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB4279C4A7B00166384 /* studyChat.xcdatamodeld */; };
 		D31E7EBB279C4A7B00166384 /* DBChannel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB6279C4A7B00166384 /* DBChannel+CoreDataProperties.swift */; };
 		D31E7EBC279C4A7B00166384 /* DBMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB7279C4A7B00166384 /* DBMessage+CoreDataProperties.swift */; };
 		D31E7EBD279C4A7B00166384 /* DBMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB8279C4A7B00166384 /* DBMessage+CoreDataClass.swift */; };
+		D341126E279C7279005650DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D341126D279C7279005650DC /* GoogleService-Info.plist */; };
 		D3C94C7D278D97C7002FAF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C94C7C278D97C7002FAF85 /* AppDelegate.swift */; };
 		D3C94C7F278D97C7002FAF85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C94C7E278D97C7002FAF85 /* SceneDelegate.swift */; };
 		D3C94C89278D97CA002FAF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C94C88278D97CA002FAF85 /* Assets.xcassets */; };
@@ -82,12 +82,12 @@
 		7925A6DACAED8C6E8BFA3AC1 /* Pods-studyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyChat.release.xcconfig"; path = "Target Support Files/Pods-studyChat/Pods-studyChat.release.xcconfig"; sourceTree = "<group>"; };
 		875B22A5372255DF48C747EB /* Pods-studyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyChatTests.release.xcconfig"; path = "Target Support Files/Pods-studyChatTests/Pods-studyChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCB5C357CF8A9DEFF9ECC153 /* Pods_studyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3064A78279C1C7800503EA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D31E7EB3279C4A7B00166384 /* DBChannel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBChannel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D31E7EB5279C4A7B00166384 /* studyChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = studyChat.xcdatamodel; sourceTree = "<group>"; };
 		D31E7EB6279C4A7B00166384 /* DBChannel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBChannel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D31E7EB7279C4A7B00166384 /* DBMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D31E7EB8279C4A7B00166384 /* DBMessage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D341126D279C7279005650DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3C94C79278D97C7002FAF85 /* studyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C94C7C278D97C7002FAF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C94C7E278D97C7002FAF85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		D3C94C70278D97C7002FAF85 = {
 			isa = PBXGroup;
 			children = (
-				D3064A78279C1C7800503EA7 /* GoogleService-Info.plist */,
+				D341126D279C7279005650DC /* GoogleService-Info.plist */,
 				D3C94C7B278D97C7002FAF85 /* studyChat */,
 				D3C94C95278D97CA002FAF85 /* studyChatTests */,
 				D3C94C9F278D97CA002FAF85 /* studyChatUITests */,
@@ -609,7 +609,7 @@
 			files = (
 				D3C94C8C278D97CA002FAF85 /* LaunchScreen.storyboard in Resources */,
 				D3C94C89278D97CA002FAF85 /* Assets.xcassets in Resources */,
-				D3064A79279C1C7800503EA7 /* GoogleService-Info.plist in Resources */,
+				D341126E279C7279005650DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
