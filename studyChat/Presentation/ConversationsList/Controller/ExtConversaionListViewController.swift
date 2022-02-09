@@ -106,3 +106,40 @@ extension ConversationsListViewController: UIViewControllerTransitioningDelegate
         return transitionAnimation
     }
 }
+
+protocol ConversationsListVC {
+    
+    var profileButton: UIButton { get }
+    func updateProfileLogoFromDB()
+    func updateProfileLogo(with image: UIImage)
+    func updateProfileLogo(with imageString: String)
+}
+
+extension ConversationsListViewController: ConversationsListVC {
+   
+    func updateProfileLogo(with image: UIImage) {
+        profileButton.setImage(image, for: .normal)
+    }
+    
+    func updateProfileLogo(with imageString: String) {
+        if let imageData = Data(base64Encoded: imageString, options: .ignoreUnknownCharacters) {
+            let image = UIImage(data: imageData)
+            profileButton.setImage(image, for: .normal)
+        }
+    }
+    
+    func updateProfileLogoFromDB() {
+        if let serviceAssembly = serviceAssembly {
+            serviceAssembly.saveLoadService.loadData { [weak self] in
+                switch $0 {
+                case .success(let profileData):
+                    if let imageData = Data(base64Encoded: profileData.photo, options: .ignoreUnknownCharacters) {
+                        self?.profileButton.setImage(UIImage(data: imageData), for: .normal)
+                    }
+                case .failure:
+                    print("error loading profile data")
+                }
+            }
+        }
+    }
+}

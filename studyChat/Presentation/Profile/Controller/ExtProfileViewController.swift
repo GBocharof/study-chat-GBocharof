@@ -174,6 +174,7 @@ extension ProfileViewController {
                 self?.profileData = newProfileData
                 let successAlert: UIAlertController = UIAlertController(title: "Данные сохранены", message: "", preferredStyle: .alert)
                 successAlert.addAction(UIAlertAction(title: "Ок", style: .default, handler: { _ in
+                    self?.delegate?.updateProfileLogo(with: newProfileData.photo)
                     self?.editModeOff()
                     self?.dismiss(animated: true, completion: nil)
                 }))
@@ -202,7 +203,6 @@ extension ProfileViewController: ImageCollectionDelegate {
             do {
                 guard let networkService = networkService else { return }
                 let image = try await networkService.sendImageRequest(url: url)
-                print("Swift Concurrency API call👇")
                 updateProfileImge(with: image)
             }
         }
@@ -212,5 +212,15 @@ extension ProfileViewController: ImageCollectionDelegate {
         view().imageView.image = image
         editModeOn()
         enableSaveButtons()
+    }
+}
+
+protocol ProfileViewControllerDelegate: UIViewController {
+    func setDelegate(with delegate: ConversationsListVC)
+}
+
+extension ProfileViewController: ProfileViewControllerDelegate {
+    public func setDelegate(with delegate: ConversationsListVC) {
+        self.delegate = delegate
     }
 }

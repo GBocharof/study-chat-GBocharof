@@ -54,6 +54,7 @@ class PresentationAssemblyImpl: PresentationAssembly {
     func conversationsListViewController() -> UIViewController {
         let controller = ConversationsListViewController()
         controller.presentationAssembly = self
+        controller.serviceAssembly = serviceAssembly
         controller.firebaseService = serviceAssembly.firebaseService
         controller.coreDataService = serviceAssembly.coreDataService
         controller.transitionAnimation = TransitionAnimation()
