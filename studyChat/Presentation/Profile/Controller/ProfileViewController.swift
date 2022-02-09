@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     var serviceAssembly: ServiceAssembly?
     var profileData: ProfileData?
     var networkService: NetworkService?
+    var delegate: ConversationsListVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()

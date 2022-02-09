@@ -15,6 +15,7 @@
 		D31E7EBC279C4A7B00166384 /* DBMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB7279C4A7B00166384 /* DBMessage+CoreDataProperties.swift */; };
 		D31E7EBD279C4A7B00166384 /* DBMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31E7EB8279C4A7B00166384 /* DBMessage+CoreDataClass.swift */; };
 		D341126E279C7279005650DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D341126D279C7279005650DC /* GoogleService-Info.plist */; };
+		D362F117279D6E8A0066A410 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D362F116279D6E8A0066A410 /* Config.xcconfig */; };
 		D3C94C7D278D97C7002FAF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C94C7C278D97C7002FAF85 /* AppDelegate.swift */; };
 		D3C94C7F278D97C7002FAF85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C94C7E278D97C7002FAF85 /* SceneDelegate.swift */; };
 		D3C94C89278D97CA002FAF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C94C88278D97CA002FAF85 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		D31E7EB7279C4A7B00166384 /* DBMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D31E7EB8279C4A7B00166384 /* DBMessage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DBMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D341126D279C7279005650DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D362F116279D6E8A0066A410 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D3C94C79278D97C7002FAF85 /* studyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C94C7C278D97C7002FAF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C94C7E278D97C7002FAF85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,10 +186,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D362F118279D81FE0066A410 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3C94CD727994BDD002FAF85 /* UITableView.swift */,
+				D3C94CD827994BDD002FAF85 /* UILabel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D3C94C70278D97C7002FAF85 = {
 			isa = PBXGroup;
 			children = (
-				D341126D279C7279005650DC /* GoogleService-Info.plist */,
 				D3C94C7B278D97C7002FAF85 /* studyChat */,
 				D3C94C95278D97CA002FAF85 /* studyChatTests */,
 				D3C94C9F278D97CA002FAF85 /* studyChatUITests */,
@@ -210,6 +220,8 @@
 		D3C94C7B278D97C7002FAF85 /* studyChat */ = {
 			isa = PBXGroup;
 			children = (
+				D362F116279D6E8A0066A410 /* Config.xcconfig */,
+				D341126D279C7279005650DC /* GoogleService-Info.plist */,
 				D3C94CEC27994C04002FAF85 /* Presentation */,
 				D3C94C7C278D97C7002FAF85 /* AppDelegate.swift */,
 				D3C94C7E278D97C7002FAF85 /* SceneDelegate.swift */,
@@ -303,8 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				D3C94CD627994BDD002FAF85 /* Date.swift */,
-				D3C94CD727994BDD002FAF85 /* UITableView.swift */,
-				D3C94CD827994BDD002FAF85 /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,6 +322,7 @@
 		D3C94CEC27994C04002FAF85 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D362F118279D81FE0066A410 /* Extensions */,
 				D3C94CED27994C04002FAF85 /* Images */,
 				D3C94CF427994C04002FAF85 /* Profile */,
 				D3C94CFC27994C04002FAF85 /* Theme */,
@@ -375,8 +386,8 @@
 		D3C94CF527994C04002FAF85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D3C94CF627994C04002FAF85 /* ExtProfileViewController.swift */,
 				D3C94CF727994C04002FAF85 /* ProfileViewController.swift */,
+				D3C94CF627994C04002FAF85 /* ExtProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -607,6 +618,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D362F117279D6E8A0066A410 /* Config.xcconfig in Resources */,
 				D3C94C8C278D97CA002FAF85 /* LaunchScreen.storyboard in Resources */,
 				D3C94C89278D97CA002FAF85 /* Assets.xcassets in Resources */,
 				D341126E279C7279005650DC /* GoogleService-Info.plist in Resources */,
@@ -789,6 +801,7 @@
 /* Begin XCBuildConfiguration section */
 		D3C94CA4278D97CA002FAF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D362F116279D6E8A0066A410 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -838,7 +851,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -850,6 +863,7 @@
 		};
 		D3C94CA5278D97CA002FAF85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D362F116279D6E8A0066A410 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -893,7 +907,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

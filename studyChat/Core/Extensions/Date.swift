@@ -8,7 +8,5 @@
 import UIKit
 
 extension Date {
-    
     static let dateFormatter = DateFormatter()
-    
 }
